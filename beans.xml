@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- constructor-arg is used to pass argument to factory method (createProduct) -->
+	<bean id="AAA" class="com.myBean.myBeanCreators.ProductorCreator"
+		factory-method="createProduct">
+		<constructor-arg value="aaa" />
+	</bean>
+	<!-- <bean id="cdrw" class="com.myBean.myBeanCreators.ProductorCreator" 
+		factory-method="createProduct"> <constructor-arg value="CDRW"></constructor-arg> 
+		</bean> <bean id="dvdrw" class="com.myBean.myBeanCreators.ProductorCreator" 
+		factory-method="createProduct"> <constructor-arg value="DVD-RW"></constructor-arg> 
+		</bean> -->
+</beans>
